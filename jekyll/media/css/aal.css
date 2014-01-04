@@ -1,0 +1,141 @@
+---
+---
+
+/* 
+  aardvark.legs by Anatoli Papirovski - http://fecklessmind.com/
+  Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* 
+  Reset first. Modified version of Eric Meyer and Paul Chaplin reset 
+  from http://meyerweb.com/eric/tools/css/reset/ 
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, nav, section, article, aside, footer
+{border: 0; margin: 0; outline: 0; padding: 0; background: transparent; vertical-align: baseline;}
+
+blockquote, q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: ''; content: none;}
+
+header, nav, section, article, aside, footer {display: block;}
+
+/* Basic styles */
+body {background: #fff; color: #000; font-size: 12pt; font-family: 'Droid Serif', serif;}
+
+img {display: inline-block; vertical-align: bottom;}
+
+h1,h2,h3,h4,h5,h6,strong,b,dt,th {font-weight: 700; font-weight: normal;}
+address,cite,em,i,caption,dfn,var {font-style: italic;}
+
+h1 {margin: 0 0 0.75em; font-size: 1.75em;}
+h2 {margin: 0 0 1em; font-size: 1.5em; font-weight: normal;}
+h3 {margin: 0 0 1.286em; font-size: 1.167em;}
+h4 {margin: 0 0 1.5em; font-size: 1em;}
+h5 {margin: 0 0 1.8em; font-size: .834em;}
+h6 {margin: 0 0 2em; font-size: .75em;}
+
+p,ul,ol,dl,blockquote,pre {margin: 0 0 20px; line-height: 133%;}
+
+li ul,li ol {margin: 0;}
+ul {list-style: outside disc;}
+ol {list-style: outside decimal;}
+li {margin: 0 0 0 2em;}
+dd {padding-left: 1.5em;}
+blockquote {padding: 0 1.5em;}
+
+a {text-decoration: underline;}
+a:hover {text-decoration: none;}
+a:visited {color: #8f8fc4;}
+a:link {color: #4d4dc4;}
+abbr,acronym {border-bottom: 1px dotted; cursor: help;}
+del {text-decoration: line-through;}
+ins {text-decoration: overline;}
+sub {font-size: .834em; line-height: 1em; vertical-align: sub;}
+sup {font-size: .834em; line-height: 1em; vertical-align: super;}
+
+tt,code,kbd,samp,pre {font-size: 1em; font-family: "Courier New", Courier, monospace;}
+
+/* Table styles */
+table {border-collapse: collapse; border-spacing: 0;}
+caption {text-align: left;}
+th, td {padding: 0;}
+tbody td, tbody th {border: 0}
+tfoot {font-style: italic;}
+
+/* Form styles */
+fieldset {clear: both;}
+legend {padding: 0 0 1.286em; font-size: 1.167em; font-weight: 700;}
+fieldset fieldset legend {padding: 0 0 1.5em; font-size: 1em;}
+* html legend {margin-left: -7px;}
+*+html legend {margin-left: -7px;}
+
+form .field, form .buttons {clear: both; margin: 0 0 1.5em;}
+form .field label {display: block;}
+form ul.fields li {list-style-type: none; margin: 0;}
+form ul.inline li, form ul.inline label {display: inline;}
+form ul.inline li {padding: 0 .75em 0 0;}
+
+input.radio, input.checkbox {vertical-align: top;}
+label, button, input.submit, input.image {cursor: pointer;}
+* html input.radio, * html input.checkbox {vertical-align: middle;}
+*+html input.radio, *+html input.checkbox {vertical-align: middle;}
+
+textarea {overflow: auto;}
+input.text, input.password, textarea, select {margin: 0; font: 1em/1.3 Helvetica, Arial, "Liberation Sans", "Bitstream Vera Sans", sans-serif; vertical-align: baseline;}
+input.text, input.password, textarea {border: 1px solid #444; border-bottom-color: #666; border-right-color: #666; padding: 2px;}
+
+* html button {margin: 0 .34em 0 0;}
+*+html button {margin: 0 .34em 0 0;}
+
+form.horizontal .field {padding-left: 150px;}
+form.horizontal .field label {display: inline; float: left; width: 140px; margin-left: -150px;}
+
+/* Useful classes */
+
+#wrapper { margin: 0 auto; padding: 10px 0 20px 0;}
+#header {}
+#header h2 {margin-bottom: 13px; font-size: 16pt}
+
+.width800 { width: 800px; }
+.width1024 { width: 1024px; }
+
+em {}
+
+.heading {text-align: left;}
+.heading img {width: 200px; height: 150px; margin: 0 20px 20px 0; border: 0; float: left}
+.heading h1 {margin: 0; padding: 0;}
+.heading p {margin: 0; padding: 0; margin-bottom: 20px;}
+
+#content {width: 640px; margin: 0 auto; margin-bottom: 0px;}
+#content p {margin: 0;}
+#content h2 {margin-top: 56px; text-align: center; font-weight: normal;}
+#content h3 {margin: -60px 0 40px 0; padding: 0; text-align: center; font-size: 16px/20px; font-weight: normal; font-style: italic;}
+#content p img {margin-bottom: 20px; border: 0;}
+
+.border { margin-bottom: 20px; }
+.border14 { margin-bottom: 14px;}
+
+.frame640 {text-align: center; margin-bottom: 40px;}
+.frame640 iframe {margin-bottom: 16px; width: 640px; height: 480px;}
+.frame640 img {margin-bottom: 20px; margin-top: 0px; border: 0;}
+.frame640 p {font-style: italic; margin-bottom: 0px;}
+.frame640 div {font-style: italic; margin-bottom: -1px;}
+
+.b00000 { background-image: url('{{ site.url }}/media//images/titles/00000.png'); background-position: -1px -1px; text-align: center; padding: 5px; }
+
+.portfolio-links a { display: block; font-size: 175%; padding: 5px; margin-bottom: 5px; text-decoration: none }
+.portfolio-links a:hover { background-image: url('{{ site.url }}/media/images/link-background.png'); }
+
+#portfolio-media { margin-bottom: 20px; }
+
+#titlebar { font-color: #808080; }
+
+.portfolio-header { margin-bottom: 4px; font-size: 2em; }

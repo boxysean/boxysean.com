@@ -1,0 +1,35 @@
+{% include header.html width=1024 %}
+
+          <table>
+            <tr>
+              <td style="width: 640px">
+                <img src="{{ site.url }}/media/images/public-constructions/main.jpg" alt="image" id="main_image" />
+              </td>
+
+              <td class="tdspacer" style="width: 40px"></td>
+
+              <td style="width: 344px; vertical-align:top" class="portfolio-links">{% for post in site.posts %}
+                {% if post.show %}
+                  <a href="{{ post.url }}" class="selector" data-image="{{ post.front_image }}">{{ post.title }}</a>
+                {% endif %}
+              {% endfor %}</td>
+            </tr>
+          </table>
+
+          <script src="{{ site.url }}/media/js/hover.js"></script>
+
+          <script type="text/javascript">
+            $.fn.preload = function() {
+              this.each(function(){
+                $('<img/>')[0].src = this;
+              });
+            }
+
+            $([{% for post in site.posts %}
+              {% if post.show %}
+                '{{ post.front_image }}',
+              {% endif %}
+            {% endfor %}]).preload();
+          </script>
+
+{% include footer.html %}

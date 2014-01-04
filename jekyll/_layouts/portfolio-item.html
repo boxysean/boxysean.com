@@ -1,0 +1,12 @@
+{% include header.html %}
+
+      <h1 class="portfolio-header">{{ page.title }}, {{ page.date | date: '%Y' }}</h1>
+      <p>{{ page.excerpt|markdown|typogrify | replace: '!SITE_URL!', site.url }}</p>
+
+      <div id="portfolio-media">
+        {{ page.portfolio_media }}
+      </div>
+
+      {{ content }}
+
+{% include footer.html %}
