@@ -5,7 +5,7 @@ title: Portfolio
 {% include header.html width=1024 %}
 
           <div class="portfolio-column-container">
-            {% for post in site.posts %}{% if post.show %}
+            {% for post in site.categories.portfolio %}{% if post.show %}
             <div class="column {% cycle 'col1', 'col2', 'col3' %}">
               <a href="{{ post.url }}" class="portfolio-button">
                 <div>

@@ -61,7 +61,7 @@ ins {text-decoration: overline;}
 sub {font-size: .834em; line-height: 1em; vertical-align: sub;}
 sup {font-size: .834em; line-height: 1em; vertical-align: super;}
 
-tt,code,kbd,samp,pre {font-size: 1em; font-family: "Courier New", Courier, monospace;}
+tt,code,kbd,samp,pre {font-size: 10pt; font-family: "Courier New", Courier, monospace;}
 
 /* Table styles */
 table {border-collapse: collapse; border-spacing: 0;}
@@ -134,7 +134,7 @@ em {}
 
 #portfolio-media { margin-bottom: 20px; }
 
-#titlebar { font-color: #808080; }
+#titlebar { color: #444444; }
 
 .portfolio-header { margin-bottom: 4px; font-size: 2em; }
 
@@ -193,3 +193,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccccc', e
 #header-container h2 {margin-bottom: 13px; font-size: 16pt}
 #header-container #titlebar { float: left; }
 #header-container #linkbar { float: right; }
+
+.home-wrapper { float: right; padding: 0 0 20px 20px; }
+.home-wrapper img { padding-bottom: 10px; }
+
+.blog-item img { max-width: 800px; }
+.blog-item em { background-color: #ffefd5; }
+.blog-item h1 { margin: 0.1em 0 0.6em 0; }
