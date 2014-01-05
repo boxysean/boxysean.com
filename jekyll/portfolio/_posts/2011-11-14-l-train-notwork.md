@@ -7,8 +7,9 @@ image_folder: mesh4lyfe
 excerpt: "Free pirate WiFi on the L Train"
 show: True
 
-front_image: "/media/images/l-train-notwork/main.jpg"
+front_image: "/media/images/l-train-notwork/main328.jpg"
 portfolio_media: "<iframe src='http://player.vimeo.com/video/32149926?title=0&amp;byline=0&amp;portrait=0' width='640' height='360' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
+keywords: "pirate wifi, mobile app"
 ---
 
 The week of November 14, my collaborators and I hosted little WiFi networks on the L train between the Morgan and 8th Ave stops from 8-10 each morning.

@@ -14,36 +14,26 @@
 
         <!-- that's my font! -->
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-
-        <!-- okay let's jquery it -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
     </head>
     <body>
 
-      <div id="wrapper" {% if include.width == 1024 %}class="width1024"{% else %}class="width800"{% endif %}>
+        <div id="wrapper" {% if include.width == 1024 %}class="width1024"{% else %}class="width800"{% endif %}>
 
-        <table id="header" {% if include.width == 1024 %}class="width1024"{% else %}class="width800"{% endif %}>
-          <tr>
-            <td style="width: {% if include.width == 1024 %}640{% else %}416{% endif %}px">
-              <h2 id="titlebar">boxysean &middot; technology and art</h2>
-            </td>
-            <td style="width: 40px"></td>
-            <td style="width: 344px; padding-left: 20px; ">
-              <h2>
-                <a title="news" class="" href="http://www.boxysean.com/news.html">news</a>
-                &middot;
-                <a title="portfolio" class="" href="{{ site.url }}/portfolio">portfolio</a>
-                &middot;
-                <a title="blog" class="" href="http://blog.boxysean.com">blog</a>
-                &middot;
-                <a title="contact" class="" href="http://www.boxysean.com/contact.html">contact</a>
-              </h2>
-            </td>
-          </tr>
-        </table>
+            <div id="header-container" {% if include.width == 1024 %}class="width1024"{% else %}class="width800"{% endif %}>
+                <h2 id="titlebar">
+                    Sean McIntyre &middot; designing technology to create art
+                </h2>
+                <h2 id="linkbar">
+                    <a title="about" class="" href="{{ site.url }}/">about me</a>
+                    &middot;
+                    <a title="portfolio" class="" href="{{ site.url }}/portfolio">portfolio</a>
+                    &middot;
+                    <a title="blog" class="" href="{{ site.url }}/blog">blog</a>
+                </h2>
+            </div>
 
-        {% if include.width == 1024 %}
-        <img src="{{ site.url }}/media/images/border1024.png" class="border" />
-        {% else %}
-        <img src="{{ site.url }}/media/images/border800.png" class="border14" />
-        {% endif %}
+            {% if include.width == 1024 %}
+            <img src="{{ site.url }}/media/images/border1024.png" class="border" />
+            {% else %}
+            <img src="{{ site.url }}/media/images/border800.png" class="border14" />
+            {% endif %}
