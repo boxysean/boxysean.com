@@ -8,6 +8,8 @@ front_image: "/media/images/autonomous-interactive-radio/main328.jpg"
 portfolio_media: "<iframe width='640' height='360' src='http://www.youtube.com/embed/js-C025tXG0?feature=player_detailpage' frameborder='0' allowfullscreen></iframe>"
 show: True
 keywords: "pirate radio, interactive"
+
+permalink: /portfolio/autonomous-interactive-radio/
 ---
 
 Autonomous Interactive Radio is an experimental radio platform where you and your friends are the DJ. By sending an email as an attachment to the station's email address, the song is added to the station's queue and broadcast over a pirate FM transmitter over a radius of a few city blocks.

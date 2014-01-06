@@ -193,10 +193,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccccc', e
 #header-container h2 {margin-bottom: 13px; font-size: 16pt}
 #header-container #titlebar { float: left; }
 #header-container #linkbar { float: right; }
-
+  
 .home-wrapper { float: right; padding: 0 0 20px 20px; }
 .home-wrapper img { padding-bottom: 10px; }
 
 .blog-item img { max-width: 800px; }
 .blog-item em { background-color: #ffefd5; }
 .blog-item h1 { margin: 0.1em 0 0.6em 0; }
+
+.blog-link h2 { margin-bottom: 0.5em; }
+.blog-link p { margin-bottom: 0.5em; }
+.blog-link { margin-bottom: 2em; }

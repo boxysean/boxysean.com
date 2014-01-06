@@ -9,6 +9,8 @@ show: True
 front_image: "/media/images/midi-synced-rainbow-box/main328.jpg"
 portfolio_media: "<iframe src='http://player.vimeo.com/video/38863614?title=0&amp;byline=0&amp;portrait=0' width='640' height='480' frameborder='0'></iframe>"
 keywords: "arduino, midi, lights"
+
+permalink: /portfolio/midi-synced-rainbow-box/
 ---
 
 [The Rainbroz](http://www.rainbroz.com) created an Arduino-controlled music-reactive light show for [MNDR](http://www.mndr.com/) to take on the road for her North American tour.

@@ -9,6 +9,8 @@ show: True
 portfolio_media: "<iframe src='http://player.vimeo.com/video/31735737?title=0&amp;byline=0&amp;portrait=0' width='640' height='424' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
 front_image: "/media/images/rainbow-machine/main328.jpg"
 keywords: "photobooth, light painting"
+
+permalink: /portfolio/rainbow-machine/
 ---
 
 Rainbows are revered as religious signs, the subject of ancient poems, adopted by social movements, formally described through science, and spread through memes[*](http://www.youtube.com/watch?v=OQSNhk5ICTI). The fascination with rainbows is endless, transcends human categories, and embodies intense positivity.

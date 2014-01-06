@@ -2,6 +2,8 @@
 layout: blog-item
 title: VirtualBox and commotion-openwrt
 show: True
+comments: true
+categories: 2012 05 23
 ---
 
 These are the steps I took to get a VirtualBox instance of Commotion. Prior to this, I hadn't used VirtualBox nor Commotion.

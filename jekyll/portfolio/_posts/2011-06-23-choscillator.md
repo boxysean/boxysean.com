@@ -8,6 +8,8 @@ show: True
 portfolio_media: "<img src='/media/images/choscillator/web/DSC_6636-Edit_fitted.png' />"
 front_image: "/media/images/choscillator/main328.jpg"
 keywords: "EEG, game, interactive"
+
+permalink: /portfolio/choscillator/
 ---
 
 The Choscillator is a game made from a [hacked Mindflex toy](http://frontiernerds.com/brain-hack) and a welded chair. The game participant sits in the chair in front of a computer monitor and adorns the Mindflex headgear which feeds brainwave data into the game.

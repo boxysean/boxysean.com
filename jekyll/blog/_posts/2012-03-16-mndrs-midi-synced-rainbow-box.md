@@ -2,6 +2,7 @@
 layout: blog-item
 title: "MNDR's MIDI Synced Rainbow Box"
 show: True
+comments: true
 ---
 
 In February 2012, the Rainbroz met [MNDR](http://www.mndr.com/), shortly before her month-long tour with the Ting Tings.
