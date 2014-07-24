@@ -6,7 +6,7 @@ show: True
 
 Last year, Reid and I set up [a photobooth](http://www.flickr.com/photos/rainbroz/sets/72157632306602848/) at the Flux Factory 2013 Benefit using our [Rainbow Machine technology](http://www.therainbowmachine.com/). This year, [Jason](http://jasoneppink.com/), [Reid](http://reidbingham.com/), and I made a photobooth for the [2014 edition of the event](http://www.fluxfactory.org/events/2014-benefit/) that built on the idea we started playing with [last month]({{ site.url }}/blog/2014/01/05/raspi-photography-controller/). [Flux Factory](http://www.fluxfactory.org/) is such a great organization, it was an honor participate yet again.
 
-*The animated GIFs were made using three Rebel T3i cameras automated with Raspberry Pis to take and stitch the stills together in less than 10 seconds.* Below I've outlined how that was done below, but first here are some of my favorite images from the night!
+*The animated GIFs were made using three Rebel T3i cameras hooked up to Raspberry Pis to simultaneously take photos and process them.* The GIFs were ready in less than 10 seconds from the photo being taken. Below I've outlined how that was done below, but first here are some of my favorite images from the night!
 
 ![gif]({{ site.url }}/media/images/fluxtime-photobooth/gif_1389831874.gif)
 
