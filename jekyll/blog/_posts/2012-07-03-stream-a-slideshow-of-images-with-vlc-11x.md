@@ -69,7 +69,7 @@ Let it be known what my computer setup looks like.
     $ vlc --verison
     VLC media player 1.1.9 The Luggage (revision exported)
 
-This trick may not work with VLC 2.x because they moved away from the [fake module](http://wiki.videolan.org/Documentation:Modules/fake) to the image demuxer[*](http://forum.videolan.org/viewtopic.php?f=11&t=98515).
+This trick may not work with VLC 2.x because they moved away from the [fake module](http://wiki.videolan.org/Documentation:Modules/fake) to the image demuxer[\*](http://forum.videolan.org/viewtopic.php?f=11&t=98515).
 
 My original (inferior) approach 
 ===============================

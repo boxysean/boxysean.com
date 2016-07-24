@@ -6,7 +6,12 @@ show: True
 
 My bike is bright and shiny!
 
-<object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/GSZaWNels7E?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/GSZaWNels7E?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object>
+<object style="height: 390px; width: 640px">
+    <param name="movie" value="http://www.youtube.com/v/GSZaWNels7E?version=3&amp;feature=player_detailpage" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="always" />
+    <embed src="http://www.youtube.com/v/GSZaWNels7E?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360" />
+</object>
 
 This past semester I had a bicycle wheel built with a hub dynamo for a class project. After the project wrapped up, the dynamo was left to look pretty on my hub without much of a job. So I decided to put it to use with some forgotten EL wire.
 

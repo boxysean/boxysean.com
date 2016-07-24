@@ -1,7 +1,6 @@
 ---
 layout: portfolio-item
 title: The Rainbow Machine
-
 description: "The Rainbow Machine"
 image_folder: rainbow-machine
 excerpt: "A rainbow light painting photobooth"
@@ -9,11 +8,10 @@ show: True
 portfolio_media: "<iframe src='http://player.vimeo.com/video/31735737?title=0&amp;byline=0&amp;portrait=0' width='640' height='424' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
 front_image: "/media/images/rainbow-machine/main328.jpg"
 keywords: "photobooth, light painting"
-
 permalink: /portfolio/rainbow-machine/
 ---
 
-Rainbows are revered as religious signs, the subject of ancient poems, adopted by social movements, formally described through science, and spread through memes[*](http://www.youtube.com/watch?v=OQSNhk5ICTI). The fascination with rainbows is endless, transcends human categories, and embodies intense positivity.
+Rainbows are revered as religious signs, the subject of ancient poems, adopted by social movements, formally described through science, and spread through memes[\*](http://www.youtube.com/watch?v=OQSNhk5ICTI). The fascination with rainbows is endless, transcends human categories, and embodies intense positivity.
 
 We created the Rainbow Machine to share our joy of light art with festival-goers at Nuit Blanche New York. Those who had their photo taken were given a card with a URL to find their photo online to keep as a momento of the event.
 
@@ -42,6 +40,6 @@ Flickr
 
 We created a [Flickr account](http://www.flickr.com/photos/rainbroz) to accompany this project.
 
-* Bring To Light: Nuit Blanche New York 2011: [full set](http://www.flickr.com/photos/rainbroz/sets/72157627664951383/) (175 photos), [selection of best photos](http://www.flickr.com/photos/shameelarafin/6202468795/in/set-72157627674018885/lightbox/) compiled by Shameel Arafin[*](http://www.flickr.com/photos/shameelarafin/).
-* Active Space: [full set](http://www.flickr.com/photos/rainbroz/sets/72157627875566611/) (73 photos), [selection of best photos](http://www.flickr.com/photos/shameelarafin/6296975762/in/set-72157627890722497/lightbox/) compiled by Shameel Arafin[*](http://www.flickr.com/photos/shameelarafin/).
+* Bring To Light: Nuit Blanche New York 2011: [full set](http://www.flickr.com/photos/rainbroz/sets/72157627664951383/) (175 photos), [selection of best photos](http://www.flickr.com/photos/shameelarafin/6202468795/in/set-72157627674018885/lightbox/) compiled by Shameel Arafin[\*](http://www.flickr.com/photos/shameelarafin/).
+* Active Space: [full set](http://www.flickr.com/photos/rainbroz/sets/72157627875566611/) (73 photos), [selection of best photos](http://www.flickr.com/photos/shameelarafin/6296975762/in/set-72157627890722497/lightbox/) compiled by Shameel Arafin[\*](http://www.flickr.com/photos/shameelarafin/).
 * New York Hall of Science: [full set](http://www.flickr.com/photos/rainbroz/sets/72157628644084181/) (85 photos)

@@ -27,7 +27,12 @@ We released a [technical document](https://github.com/boxysean/LTrainNotwork/blo
 404 Podcast discussion
 ----------------------
 
-<object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/gFCU6puI_fE?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/gFCU6puI_fE?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object>
+<object style="height: 390px; width: 640px">
+    <param name="movie" value="http://www.youtube.com/v/gFCU6puI_fE?version=3&amp;feature=player_detailpage" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="always" />
+    <embed src="http://www.youtube.com/v/gFCU6puI_fE?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360" />
+</object>
 <p>404 touched most of the issues revolving around our project :)<br />Credit: <a href="http://www.cnet.com/8301-13952_1-57326111-81/the-404-948-where-were-in-some-deep-dish-podcast/">404 Podcast episode link</a></p>
 
 Images

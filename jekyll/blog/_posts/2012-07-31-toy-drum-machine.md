@@ -12,11 +12,11 @@ Reid and I went with our laptops and a couple sacks full of electrical gear to a
 
 I'll spare the suspense, we were successful in adding the MIDI interface. After the hacking portion of the hackathon concluded, we had a performance and demo session to show everybody what else we made. Check out the following video.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/4MBHX4e2kkA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/4MBHX4e2kkA?feature=player_detailpage" frameborder="0"></iframe>
 
 We also have audio recorded from the drum machine's lineout. It sounds completely different, probably because it's just grabbing the raw signal and no reverb from the space.
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F54595215&show_artwork=true"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F54595215&amp;show_artwork=true"></iframe>
 
 Other cool stuff at the hackathon were HTML5/JavaScript apps to do realtime audio processing in your browser, an app to map one song's timbre onto another song's pitch (??? crazy stuff), and, my favourite, a web app that drops a beat on the Google translate robot voice rapping the words you type.
 

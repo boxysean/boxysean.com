@@ -10,7 +10,7 @@ This time, *Sarah invited [Reid](http://www.reidbingham.com) and I to bring the 
 
 <a href="{{ site.url }}/media/images/lunch-beat/full/stick.jpg"><img src="{{ site.url }}/media/images/lunch-beat/web/stick.jpg" /></a><br />
 
-Like the [last mechanism](http://blog.boxysean.com/images/end-of-the-world/web/rainbow-stick.jpg), this is just a thin piece of wood with LPD8806 RGB strip, an Arduino, and a 9V battery. The only difference is that we used two handles (made from bolts) instead of one. The space we were in[*](http://www.secrettheatre.com/) was too small to twirl the stick around ([like this](http://blog.boxysean.com/images/end-of-the-world/web/0013.png)).
+Like the [last mechanism](http://blog.boxysean.com/images/end-of-the-world/web/rainbow-stick.jpg), this is just a thin piece of wood with LPD8806 RGB strip, an Arduino, and a 9V battery. The only difference is that we used two handles (made from bolts) instead of one. The space we were in[\*](http://www.secrettheatre.com/) was too small to twirl the stick around ([like this](http://blog.boxysean.com/images/end-of-the-world/web/0013.png)).
 
 At first, I viewed putting two handles on the stick as a negative constraint. The one handle mechanism provided one degree of freedom to the light painter: twirl the stick, damnit!
 
