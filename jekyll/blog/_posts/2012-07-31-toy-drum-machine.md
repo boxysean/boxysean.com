@@ -12,7 +12,7 @@ Reid and I went with our laptops and a couple sacks full of electrical gear to a
 
 I'll spare the suspense, we were successful in adding the MIDI interface. After the hacking portion of the hackathon concluded, we had a performance and demo session to show everybody what else we made. Check out the following video.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/4MBHX4e2kkA?feature=player_detailpage" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/4MBHX4e2kkA?feature=player_detailpage" frameborder="0"></iframe>
 
 We also have audio recorded from the drum machine's lineout. It sounds completely different, probably because it's just grabbing the raw signal and no reverb from the space.
 

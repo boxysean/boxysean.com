@@ -2,22 +2,13 @@
 title: Portfolio
 ---
 
-{% include header.html width=1024 %}
+{% include header.html %}
 
-          <div class="portfolio-column-container">
-            {% for post in site.categories.portfolio %}{% if post.show %}
-            <div class="column {% cycle 'col1', 'col2', 'col3' %}">
-              <a href="{{ post.url }}" class="portfolio-button">
-                <div>
-                  <span>
-                    <h2>{{ post.title }}</h2>
-                    <p>{{ post.keywords }}</p>
-                  </span>
-                </div>
-                <img src="{{ post.front_image }}" />
-              </a>
-            </div>
-            {% endif %}{% endfor %}
-          </div>
+  {% for post in site.categories.portfolio %}{% if post.show %}
+  <a href="{{ post.url }}" class="portfolio-brick" style="background-image: url({{ post.front_image }})">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.keywords }}</p>
+  </a>
+  {% endif %}{% endfor %}
 
 {% include footer.html %}

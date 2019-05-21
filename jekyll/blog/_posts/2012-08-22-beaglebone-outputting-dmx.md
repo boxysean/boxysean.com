@@ -8,7 +8,7 @@ Last weekend [I started playing with the BeagleBone PRU](http://blog.boxysean.co
 
 Well it's been 10 days or so and I've done it! Here is a quick video to show the setup in action.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/Gl-g03SivUs?feature=player_detailpage" frameborder="0"></iframe>
+<iframe src="http://www.youtube.com/embed/Gl-g03SivUs?feature=player_detailpage" frameborder="0"></iframe>
 
 I'm off to Europe for the next month to participate in [Interactivos?](http://medialab-prado.es/article/interactivos12_liubliana_tecnologias_obsoletas_del_futuro). After I'm back I'll package and release the code so I'm not the only one with these powers. I'll be using this code for my light installation with [Reid](http://www.reidbingham.com) at Detroit's [DLECTRICITY](http://www.dlectricity.com/) light festival.
 

@@ -15,31 +15,29 @@ The BeagleBoard team [released a nice package](https://github.com/beagleboard/am
 
 First, SSH into your BeagleBone.
 
-{% highlight bash %}
-root@beaglebone:/tmp# git clone git://github.com/beagleboard/am335x_pru_package.git
-Cloning into 'am335x_pru_package'...
-...
-root@beaglebone:/tmp# cd am335x_pru_package/pru_sw/app_loader/interface
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/app_loader/interface# make CROSS_COMPILE="" # we're compiling right on the system, so no need to cross compile
-...
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/app_loader/interface# cd ../../utils/pasm_source
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/utils/pasm_source# ./linuxbuild
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/utils/pasm_source# cd ../../example_apps
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps# make CROSS_COMPILE=""
-...
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps# cd bin
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin# modprobe uio_pruss # so very important, load the kernel module or else  the code will fail
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin# ./PRU_memAccessPRUDataRam # one of the examples provided by Beagle / TI
-INFO: Starting PRU_memAccessPRUDataRam example.
-AM33XX
-        INFO: Initializing example.
-        INFO: Executing example.
-File ./PRU_memAccessPRUDataRam.bin open passed
-        INFO: Waiting for HALT command.
-        INFO: PRU completed transfer.
-INFO: Example executed succesfully.
-root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin# 
-{% endhighlight %}
+    root@beaglebone:/tmp# git clone git://github.com/beagleboard/am335x_pru_package.git
+    Cloning into 'am335x_pru_package'...
+    ...
+    root@beaglebone:/tmp# cd am335x_pru_package/pru_sw/app_loader/interface
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/app_loader/interface# make CROSS_COMPILE="" # we're compiling right on the system, so no need to cross compile
+    ...
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/app_loader/interface# cd ../../utils/pasm_source
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/utils/pasm_source# ./linuxbuild
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/utils/pasm_source# cd ../../example_apps
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps# make CROSS_COMPILE=""
+    ...
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps# cd bin
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin# modprobe uio_pruss # so very important, load the kernel module or else  the code will fail
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin# ./PRU_memAccessPRUDataRam # one of the examples provided by Beagle / TI
+    INFO: Starting PRU_memAccessPRUDataRam example.
+    AM33XX
+            INFO: Initializing example.
+            INFO: Executing example.
+    File ./PRU_memAccessPRUDataRam.bin open passed
+            INFO: Waiting for HALT command.
+            INFO: PRU completed transfer.
+    INFO: Example executed succesfully.
+    root@beaglebone:/tmp/am335x_pru_package/pru_sw/example_apps/bin#
 
 <em>Reminder #1: always run `modprobe uio_pruss` before running any code for the PRU! You only need to do it once per bootup. If you search the Google Groups BeagleBoard list you'll notice many people forgetting this step. I asked for help on IRC (#beagle on freenode) and received the same response.</em>
 
@@ -52,7 +50,6 @@ Making the PRU blink the BeagleBone
 
 Now that we've got example code running on the PRU and hopefully have some idea of what it's doing, it's time to add a new PRU example app: blinking the BeagleBone's LEDs. This was done by Lyren Brown in a [buried post](https://groups.google.com/forum/?fromgroups#!topic/beagleboard/35ZXP82EQjA[1-25]) on the BeagleBoard's mailing list. I've reposted the code here.
 
-{% highlight asm %}
     #define GPIO1 0x4804c000
     #define GPIO_CLEARDATAOUT 0x190
     #define GPIO_SETDATAOUT 0x194
@@ -74,7 +71,6 @@ Now that we've got example code running on the PRU and hopefully have some idea 
         QBNE DELAY2, r0, 0
         SUB r1, r1, 1
         QBNE BLINK, r1, 0
-{% endhighlight %}
 
 The code is illustrative on how to use the PRU to write to the BeagleBone's pins. Lyren uses the address `0x4804c000` which refers to the memory space mapped to the `GPIO1` registers (see Texas Instrument's [AM335x technical reference manual (PDF)](http://www.ti.com/lit/ds/symlink/am3358.pdf). Writing bits to the `GPIO_CLEARDATAOUT` and `GPIO_SETDATAOUT` registers sets the BeagleBone's pins low and high respectively. In particular, writing `7<<22` to `GPIO_SETDATAOUT` sets the 22nd, 23rd, and 24th pins high (excercise to reader: why does it set all three pins high?), these pins being the LEDs on the BeagleBone. Very cool.
 

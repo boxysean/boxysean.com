@@ -6,7 +6,7 @@ show: True
 
 My bike is bright and shiny!
 
-<object style="height: 390px; width: 640px">
+<object>
     <param name="movie" value="http://www.youtube.com/v/GSZaWNels7E?version=3&amp;feature=player_detailpage" />
     <param name="allowFullScreen" value="true" />
     <param name="allowScriptAccess" value="always" />

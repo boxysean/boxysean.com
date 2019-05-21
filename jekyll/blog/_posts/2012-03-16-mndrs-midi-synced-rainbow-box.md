@@ -13,7 +13,7 @@ Jamie could not join MNDR for her tour, so _we created a music-reactive unit tha
 
 Here is video of the device in action.
 
-<iframe src="http://player.vimeo.com/video/38863614?byline=0&amp;portrait=0" width="720" height="540" frameborder="0"></iframe>
+<iframe src="http://player.vimeo.com/video/38863614?byline=0&amp;portrait=0" frameborder="0"></iframe>
 
 Hardware
 --------
