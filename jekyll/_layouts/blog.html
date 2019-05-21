@@ -7,7 +7,7 @@ title: Blog
 {% for post in site.categories.blog %}{% if post.show %}
 <div class="blog-link">
   <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.date | date: '%b %d, %Y' }}</p>
+  <h3>{{ post.date | date: '%b %d, %Y' }}</h3>
   {{ post.excerpt }}
 </div>
 {% endif %}{% endfor %}

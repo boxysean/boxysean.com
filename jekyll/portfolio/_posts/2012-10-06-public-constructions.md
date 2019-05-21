@@ -4,7 +4,7 @@ title: Public Constructions
 
 description: "Public Constructions: A Mini Night Park"
 front_image: "/media/images/public-constructions/main328.jpg"
-portfolio_media: "<iframe src='http://player.vimeo.com/video/53305832?byline=0&amp;portrait=0&amp;badge=0' width='720' height='405' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
+portfolio_media: "<div class='iframe-wrapper'><img class='ratio' src='https://placehold.it/740x416'/><iframe src='http://player.vimeo.com/video/53305832?byline=0&amp;portrait=0&amp;badge=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>"
 excerpt: "A mini night park at DLECTRICITY festival in Detroit"
 show: True
 keywords: "light installation"

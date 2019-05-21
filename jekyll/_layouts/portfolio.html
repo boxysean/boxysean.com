@@ -6,8 +6,12 @@ title: Portfolio
 
   {% for post in site.categories.portfolio %}{% if post.show %}
   <a href="{{ post.url }}" class="portfolio-brick" style="background-image: url({{ post.front_image }})">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.keywords }}</p>
+    <div class="gradient">
+      <div class="text">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.keywords }}</p>
+      </div>
+    </div>
   </a>
   {% endif %}{% endfor %}
 
