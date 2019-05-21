@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")/jekyll"
 jekyll build
-aws s3 cp _site/ s3://boxysean.com/ --recursive
+aws s3 sync _site/ s3://boxysean.com/

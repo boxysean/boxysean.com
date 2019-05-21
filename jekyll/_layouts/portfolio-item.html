@@ -1,12 +1,11 @@
-{% include header.html %}
+{% include header.html page_class="portfolio-container" %}
 
-      <h1 class="portfolio-header">{{ page.title }}, {{ page.date | date: '%Y' }}</h1>
-      <p>{{ page.excerpt|markdown|typogrify }}</p>
+  <h1 class="portfolio-header">{{ page.title }}, {{ page.date | date: '%Y' }}</h1>
 
-      <div id="portfolio-media">
-        {{ page.portfolio_media }}
-      </div>
+  <div id="portfolio-media">
+    {{ page.portfolio_media }}
+  </div>
 
-      {{ content }}
+  {{ content }}
 
 {% include footer.html %}
