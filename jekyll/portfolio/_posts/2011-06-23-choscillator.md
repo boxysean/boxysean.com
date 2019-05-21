@@ -18,10 +18,10 @@ The gameplay is an endless oscillation driven by human and computer feedback. Th
 
 I ask the participant to focus and concentrate to make the white box larger (see animation below), and relax and breathe to make the black box smaller. The animation continues smoothly if the participant complies; otherwise, it halts.
 
-<!-- <img src="{{ site.url }}/media/images/Choscillator/web/animation.gif" width=640 height=480 />
+<img src="{{ site.url }}/media/images/Choscillator/web/animation.gif" />
 
 <p>Screen display</p>
- -->
+
 *Download:* [Game source code](https://github.com/boxysean/choscillator). Contact me for a description of the algorithm.
 
 *Thanks:* [Derek Means](http://www.flickr.com/photos/derekrmeans/) for photography; [Madagascar Institute](http://www.madagascarinstitute.com/), especially [Lindsay McCosh](http://www.lindsaymccosh.com/) and Kim Couchot.
@@ -36,5 +36,5 @@ Choscillator Photos
 <img src="{{ site.url }}/media/images/Choscillator/web/DSC_6518.png" />
 <p>Photo credit: <a href="http://www.flickr.com/photos/derekrmeans/">Derek Means</a></p>
 
-<a href="{{ site.url }}/media/images/Choscillator/large/IMG_1008.JPG"><img src="{{ site.url }}/media/images/Choscillator/web/IMG_1008.JPG" /></a>
+<img src="{{ site.url }}/media/images/Choscillator/web/IMG_1008.JPG" />
 <p>Photo credit: <a href="http://www.seej.net/">Chris Jordan</a></p>

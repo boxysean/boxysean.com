@@ -8,7 +8,7 @@ excerpt: "Free pirate WiFi on the L Train"
 show: True
 
 front_image: "/media/images/l-train-notwork/main328.jpg"
-portfolio_media: "<iframe src='http://player.vimeo.com/video/32149926?title=0&amp;byline=0&amp;portrait=0' width='640' height='360' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
+portfolio_media: "<div class='iframe-wrapper'><img class='ratio' src='https://placehold.it/740x415'/><iframe src='http://player.vimeo.com/video/32149926?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe></div>"
 keywords: "pirate wifi, mobile app"
 
 permalink: /portfolio/l-train-notwork/
@@ -27,12 +27,16 @@ We released a [technical document](https://github.com/boxysean/LTrainNotwork/blo
 404 Podcast discussion
 ----------------------
 
-<object style="height: 390px; width: 640px">
+<div class="iframe-wrapper">
+  <img class='ratio' src='https://placehold.it/740x451' />
+  <iframe src='http://www.youtube.com/embed/gFCU6puI_fE?feature=player_detailpage' frameborder='0' allowfullscreen></iframe>
+  <!-- <object>
     <param name="movie" value="http://www.youtube.com/v/gFCU6puI_fE?version=3&amp;feature=player_detailpage" />
     <param name="allowFullScreen" value="true" />
     <param name="allowScriptAccess" value="always" />
-    <embed src="http://www.youtube.com/v/gFCU6puI_fE?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360" />
-</object>
+    <embed src="http://www.youtube.com/v/gFCU6puI_fE?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" />
+  </object> -->
+</div>
 <p>404 touched most of the issues revolving around our project :)<br />Credit: <a href="http://www.cnet.com/8301-13952_1-57326111-81/the-404-948-where-were-in-some-deep-dish-podcast/">404 Podcast episode link</a></p>
 
 Images
