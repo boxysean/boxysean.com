@@ -7,7 +7,7 @@ excerpt: "A game using an EEG hack and welded chair"
 show: True
 portfolio_media: "<img src='/media/images/choscillator/web/DSC_6636-Edit_fitted.png' />"
 front_image: "/media/images/choscillator/main328.jpg"
-keywords: "EEG, game, interactive"
+keywords: "EEG game"
 
 permalink: /portfolio/choscillator/
 ---
