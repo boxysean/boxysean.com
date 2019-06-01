@@ -9,7 +9,7 @@ excerpt: "A mini night park at DLECTRICITY festival in Detroit"
 show: True
 keywords: "light installation"
 
-permalink: /portfolio/public-constructions
+permalink: /portfolio/public-constructions/
 ---
 
 A light installation made from the vernacular of traffic barrier objects. These objects, made to obstruct and block, were repurposed to create an open and inviting space for people to sit, relax, and engage with each other, and their city, in a fun way.

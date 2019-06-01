@@ -7,7 +7,7 @@ front_image: "/media/images/fluxfinity/main.jpg"
 portfolio_media: <img src="/media/images/fluxfinity/Fluxfinity-0052.jpg" />
 show: True
 keywords: "photobooth"
-permalink: /portfolio/fluxfinity
+permalink: /portfolio/fluxfinity/
 ---
 
 A photobooth for the [9th Annual Flux Factory Art Auction](http://www.fluxfactory.org/fluxers/save-the-date-flux-not-so-silent-auction-2015/). We photographed subjects individually to create a series of photos that placed them with their fellow art auction attendees as though they were posing together for a group photo.

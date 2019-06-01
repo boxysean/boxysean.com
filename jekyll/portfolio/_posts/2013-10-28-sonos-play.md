@@ -9,7 +9,7 @@ excerpt: "A visual music experience"
 show: True
 keywords: "light installation"
 
-permalink: /portfolio/sonos-play
+permalink: /portfolio/sonos-play/
 ---
 
 
