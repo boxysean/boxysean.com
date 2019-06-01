@@ -9,7 +9,7 @@ excerpt: "Instant GIFs from 3 cameras"
 show: True
 keywords: "animated GIF photobooth"
 
-permalink: /portfolio/fluxtime-photobooth
+permalink: /portfolio/fluxtime-photobooth/
 ---
 
 A photobooth that takes shots from 3 camera angles simultaneously and automatically stitches them together as an animated GIF. The photos are developed almost instantaneously for the viewer's immediate gratification.
