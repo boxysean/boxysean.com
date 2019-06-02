@@ -7,7 +7,7 @@ front_image: "/media/images/fluxtime-photobooth/main328.gif"
 portfolio_media: "<img src='/media/images/fluxtime-photobooth/gif_1389831874.gif' width='800' />"
 excerpt: "Instant GIFs from 3 cameras"
 show: True
-keywords: "animated GIF photobooth"
+keywords: "animated photobooth"
 
 permalink: /portfolio/fluxtime-photobooth/
 ---
