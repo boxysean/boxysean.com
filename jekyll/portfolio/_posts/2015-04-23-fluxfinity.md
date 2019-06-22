@@ -6,7 +6,7 @@ description: "Fluxfinity"
 front_image: "/media/images/fluxfinity/main.jpg"
 portfolio_media: <img src="/media/images/fluxfinity/Fluxfinity-0052.jpg" />
 show: True
-keywords: "photobooth"
+keywords: "group photobooth"
 permalink: /portfolio/fluxfinity/
 ---
 
