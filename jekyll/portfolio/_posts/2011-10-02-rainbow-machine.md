@@ -7,6 +7,7 @@ excerpt: "A rainbow light painting photobooth"
 show: True
 portfolio_media: "<div class='iframe-wrapper'><img class='ratio' src='https://placehold.it/740x490' /><iframe src='https://player.vimeo.com/video/31735737?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe></div>"
 front_image: "/media/images/rainbow-machine/main328.jpg"
+front_image_hover: "/media/images/rainbow-machine/main328.jpg"
 keywords: "photobooth, light painting"
 permalink: /portfolio/rainbow-machine/
 ---

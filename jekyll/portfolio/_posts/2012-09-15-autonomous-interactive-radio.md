@@ -5,6 +5,7 @@ title: Autonomous Interactive Radio
 description: "Autonomous Interactive Radio"
 excerpt: "Experimental pirate radio platform"
 front_image: "/media/images/autonomous-interactive-radio/main328.jpg"
+front_image_hover: "/media/images/autonomous-interactive-radio/main328.jpg"
 portfolio_media: "<div class='iframe-wrapper'><img class='ratio' src='https://placehold.it/740x416'/><iframe src='https://www.youtube.com/embed/js-C025tXG0?feature=player_detailpage' frameborder='0' allowfullscreen></iframe></div>"
 show: True
 keywords: "pirate radio"

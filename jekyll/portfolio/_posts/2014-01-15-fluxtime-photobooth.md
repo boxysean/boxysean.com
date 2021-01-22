@@ -3,7 +3,8 @@ layout: portfolio-item
 title: Fluxtime Photobooth
 
 description: "Fluxtime Photobooth"
-front_image: "/media/images/fluxtime-photobooth/main328.gif"
+front_image: "/media/images/fluxtime-photobooth/main328-static.gif"
+front_image_hover: "/media/images/fluxtime-photobooth/main328.gif"
 portfolio_media: "<img src='/media/images/fluxtime-photobooth/gif_1389831874.gif' width='800' />"
 excerpt: "Instant GIFs from 3 cameras"
 show: True

@@ -4,6 +4,7 @@ title: Fluxfinity
 
 description: "Fluxfinity"
 front_image: "/media/images/fluxfinity/main.jpg"
+front_image_hover: "/media/images/fluxfinity/main.jpg"
 portfolio_media: <img src="/media/images/fluxfinity/Fluxfinity-0052.jpg" />
 show: True
 keywords: "group photobooth"

@@ -4,6 +4,7 @@ title: Sonos Play
 
 description: "Sonos Play"
 front_image: "/media/images/sonos-play/main328.jpg"
+front_image_hover: "/media/images/sonos-play/main328.jpg"
 portfolio_media: "<div class='iframe-wrapper'><img class='ratio' src='https://placehold.it/740x416'/><iframe src='https://player.vimeo.com/video/96827432?byline=0&amp;portrait=0&amp;badge=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>"
 excerpt: "A visual music experience"
 show: True
