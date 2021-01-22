@@ -3,6 +3,7 @@ layout: portfolio-item
 title: Parallelogram
 description: "Parallelogram"
 front_image: "/media/images/parallelogram/main.jpg"
+front_image_hover: "/media/images/parallelogram/main.jpg"
 portfolio_media: <img src="/media/images/parallelogram/IMG_4746.jpg" />
 show: True
 keywords: "wall-mounted lamp"

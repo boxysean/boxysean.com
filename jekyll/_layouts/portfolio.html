@@ -5,11 +5,15 @@ title: Portfolio
 {% include header.html %}
 
   {% for post in site.categories.portfolio %}{% if post.show %}
-  <a href="{{ post.url }}" class="portfolio-brick" style="background-image: url({{ post.front_image }})">
-    <div class="gradient">
-      <div class="text">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.keywords }}</p>
+  <a href="{{ post.url }}" style="display: block">
+    <div class="portfolio-brick portfolio-brick-bottom" style="background-image: url({{ post.front_image_hover }})">
+      <div class="portfolio-brick portfolio-brick-top" style="background-image: url({{ post.front_image }})">
+        <div class="portfolio-brick-gradient">
+          <div class="portfolio-brick-text">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.keywords }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </a>
