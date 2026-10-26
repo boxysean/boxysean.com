@@ -128,3 +128,5 @@ upgrade, edit `Gemfile`, run `bundle update <gem>`, and commit both files.
 <!-- deploy preview probe 2026-10-26T09:04:04Z -->
 
 <!-- branch-deploy probe 20261026T091659Z -->
+
+<!-- all-branches probe 20261026T092143Z -->
