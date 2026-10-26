@@ -17,8 +17,17 @@
   command = "bundle exec jekyll build --source jekyll --destination jekyll/_site"
 
 # ---------------------------------------------------------------------------
-# Redirects. Everything the old S3 bucket served maps 1:1 onto this build, so
-# no page needs a rule. These only cover the moves below, plus the www host.
+# Redirects.
+#
+# URL inventory, taken from the built output: 37 pages — `/`, `/blog/`,
+# `/portfolio/`, 21 blog posts and 13 portfolio items. `permalink: pretty` has
+# been in `_config.yml` since the first commit (06c0356, 2012), so blog posts
+# have never been published at `.html` URLs and nothing is needed to keep them
+# alive. The 13 portfolio permalinks lost their trailing slash in 319bf42
+# (2019); Netlify's pretty-URL normalisation 301s `/portfolio/<slug>` to
+# `/portfolio/<slug>/`, which is verified against the live site.
+#
+# That leaves exactly the two cases below.
 # ---------------------------------------------------------------------------
 
 # Canonical host is the apex; www answers on the same records, so 301 it.
@@ -27,19 +36,6 @@
   to = "https://boxysean.com/:splat"
   status = 301
   force = true
-
-# Pre-2012 permalinks: the site was built with `permalink: none`, which produced
-# /blog/2012-03-16-title.html. Those filenames were live for months and are
-# still in old links; send them to the pretty URL.
-[[redirects]]
-  from = "/blog/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})-:slug.html"
-  to = "/blog/:year/:month/:day/:slug/"
-  status = 301
-
-[[redirects]]
-  from = "/portfolio/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})-:slug.html"
-  to = "/portfolio/:slug/"
-  status = 301
 
 # One post's front matter carries `categories: 2012 05 23`, a leftover from the
 # 2012 permalink scheme, so Jekyll has always published it under a doubled date.
