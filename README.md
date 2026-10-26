@@ -126,3 +126,5 @@ without a rebuild, in seconds. For a code-level rollback, revert the commit and 
 upgrade, edit `Gemfile`, run `bundle update <gem>`, and commit both files.
 
 <!-- deploy preview probe 2026-10-26T09:04:04Z -->
+
+<!-- branch-deploy probe 20261026T091659Z -->
