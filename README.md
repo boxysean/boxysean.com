@@ -102,9 +102,29 @@ Ruby 3.2 and Bundler are the only requirements; the docker image is no longer ne
 
 ### Deploy
 
-Netlify is linked to this GitHub repo: pushes to `master` build production, and pull
-requests get deploy previews. Site: `boxysean-com` (`https://boxysean-com.netlify.app`).
-The custom domain is attached in phase 2 once DNS is re-pointed.
+Netlify is linked to this GitHub repo: pushes to `master` build production. Site:
+`boxysean-com` (`https://boxysean-com.netlify.app`, site id
+`94501faa-3611-49ea-b8ec-537ce1326bc1`). The custom domain is attached in phase 2 once
+DNS is re-pointed.
+
+**Deploy previews do not build yet.** The site's setting is on (`build_settings.skip_prs`
+is `false`) and `netlify.toml` carries a `[context.deploy-preview]` command, but Netlify
+receives no build events for anything except `master`. Verified on 2026-10-26 three ways:
+opening PR #15, pushing twice to its branch, and widening `allowed_branches` from
+`["master"]` to all branches — zero deploys and zero Netlify commit statuses resulted, and
+only the three `master` pushes ever produced a build. Widen-then-restore left the site
+config as it was.
+
+The missing piece is the GitHub side of Netlify's integration, not the repo: in the Netlify
+UI, *Site settings → Build & deploy → Repository* needs the Netlify GitHub App re-linked /
+re-authorised for `boxysean/boxysean.com` so `pull_request` and non-default-branch `push`
+events are delivered. That needs account-owner access; the automation token cannot read or
+write repo webhooks (GitHub returns 403). Once that is done, `netlify deploy` from CI or a
+re-open of any PR will produce a preview with no change to this repo.
+
+Until then, verify a branch before merging with `make build` and
+`make deploy-preview`, which uploads a draft deploy and prints its URL without touching
+production.
 
 For a manual deploy from a checkout (hotfix, or before the link existed), use the Netlify
 CLI authenticated with the token in 1Password ("Netlify API token"):
