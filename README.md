@@ -92,6 +92,13 @@ Ruby 3.2 and Bundler are the only requirements; the docker image is no longer ne
     bundle install          # or: make install
     make serve              # http://localhost:4000, live reload
 
+If Ruby is the system package (Debian/Ubuntu, gems under `/var/lib/gems`), Bundler
+cannot write there as a normal user. Install into the checkout instead — the
+`Makefile`'s `bundle exec` picks it up automatically:
+
+    bundle config set --local path vendor/bundle
+    bundle install
+
 ### Build
 
     make build              # -> jekyll/_site
@@ -126,12 +133,18 @@ Until then, verify a branch before merging with `make build` and
 `make deploy-preview`, which uploads a draft deploy and prints its URL without touching
 production.
 
-For a manual deploy from a checkout (hotfix, or before the link existed), use the Netlify
-CLI authenticated with the token in 1Password ("Netlify API token"):
+For a manual deploy from a checkout (hotfix, or before the link existed), use the
+Netlify CLI authenticated with the token in 1Password ("Netlify API token"). No
+`netlify link` is needed — the `Makefile` pins the site id:
 
     export NETLIFY_AUTH_TOKEN=$(op read "op://Shared with CoreyChimpBot/Netlify API token/password")
     make deploy             # production deploy of jekyll/_site
     make deploy-preview     # throwaway deploy URL, no production impact
+
+`NETLIFY_SITE_ID` overrides the site the deploy targets. Always deploy through
+`make`: a bare `netlify deploy` from an unlinked checkout has no site to publish
+to and creates a brand-new one (that is how a stray `idyllic-…` site appeared on
+2026-10-26).
 
 ### Rollback
 
