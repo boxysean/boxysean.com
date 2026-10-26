@@ -3,6 +3,11 @@ BUNDLE ?= bundle
 SITE_SRC  = jekyll
 SITE_DEST = jekyll/_site
 
+# The Netlify site this repo publishes to. Passed explicitly to every deploy so
+# that a checkout without .netlify/state.json (any fresh clone, or CI) deploys to
+# boxysean.com instead of silently creating a brand-new Netlify site.
+NETLIFY_SITE_ID ?= 94501faa-3611-49ea-b8ec-537ce1326bc1
+
 # Every tracked file under jekyll/ that is not build output.
 SOURCES := $(shell find $(SITE_SRC) -type f \
 	-not -path '$(SITE_DEST)/*' \
@@ -29,11 +34,11 @@ serve:
 
 ## Deploy the built site to production on Netlify (needs NETLIFY_AUTH_TOKEN).
 deploy: build
-	netlify deploy --dir $(SITE_DEST) --prod
+	netlify deploy --dir $(SITE_DEST) --site $(NETLIFY_SITE_ID) --prod
 
-## Upload a draft deploy and print its preview URL.
+## Upload a draft deploy of $(NETLIFY_SITE_ID) and print its preview URL.
 deploy-preview: build
-	netlify deploy --dir $(SITE_DEST)
+	netlify deploy --dir $(SITE_DEST) --site $(NETLIFY_SITE_ID)
 
 clean:
 	rm -rf $(SITE_DEST) $(SITE_SRC)/.jekyll-cache
