@@ -1,0 +1,51 @@
+# Netlify build configuration for boxysean.com.
+#
+# The Jekyll source has always lived in jekyll/; it is built from the repo root
+# so that Gemfile/Gemfile.lock sit where Netlify's Ruby buildpack looks for them.
+
+[build]
+  command = "bundle exec jekyll build --source jekyll --destination jekyll/_site"
+  publish = "jekyll/_site"
+
+[build.environment]
+  # Ruby 3.2 ships in Netlify's build image and matches the local toolchain.
+  RUBY_VERSION = "3.2.3"
+  JEKYLL_ENV = "production"
+
+# Deploy previews for every pull request.
+[context.deploy-preview]
+  command = "bundle exec jekyll build --source jekyll --destination jekyll/_site"
+
+# ---------------------------------------------------------------------------
+# Redirects. Everything the old S3 bucket served maps 1:1 onto this build, so
+# no page needs a rule. These only cover the moves below, plus the www host.
+# ---------------------------------------------------------------------------
+
+# Canonical host is the apex; www answers on the same records, so 301 it.
+[[redirects]]
+  from = "https://www.boxysean.com/*"
+  to = "https://boxysean.com/:splat"
+  status = 301
+  force = true
+
+# Pre-2012 permalinks: the site was built with `permalink: none`, which produced
+# /blog/2012-03-16-title.html. Those filenames were live for months and are
+# still in old links; send them to the pretty URL.
+[[redirects]]
+  from = "/blog/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})-:slug.html"
+  to = "/blog/:year/:month/:day/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})-:slug.html"
+  to = "/portfolio/:slug/"
+  status = 301
+
+# One post's front matter carries `categories: 2012 05 23`, a leftover from the
+# 2012 permalink scheme, so Jekyll has always published it under a doubled date.
+# That is the live URL today; keep it and point the obvious single-date guess at
+# it rather than changing the published path.
+[[redirects]]
+  from = "/blog/2012/05/23/virtualbox-and-commotion-openwrt/"
+  to = "/blog/2012/05/23/2012/05/23/virtualbox-and-commotion-openwrt/"
+  status = 301
