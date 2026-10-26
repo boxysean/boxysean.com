@@ -102,16 +102,16 @@ Ruby 3.2 and Bundler are the only requirements; the docker image is no longer ne
 
 ### Deploy
 
-Production and previews both go through the Netlify CLI, authenticated with the token
-in 1Password ("Netlify API token"):
+Netlify is linked to this GitHub repo: pushes to `master` build production, and pull
+requests get deploy previews. Site: `boxysean-com` (`https://boxysean-com.netlify.app`).
+The custom domain is attached in phase 2 once DNS is re-pointed.
+
+For a manual deploy from a checkout (hotfix, or before the link existed), use the Netlify
+CLI authenticated with the token in 1Password ("Netlify API token"):
 
     export NETLIFY_AUTH_TOKEN=$(op read "op://Shared with CoreyChimpBot/Netlify API token/password")
     make deploy             # production deploy of jekyll/_site
     make deploy-preview     # throwaway deploy URL, no production impact
-
-Pushes to `master` build production on Netlify; pull requests get deploy previews.
-Site: `boxysean-com` (`https://boxysean-com.netlify.app`). The custom domain is attached
-in phase 2 once DNS is re-pointed.
 
 ### Rollback
 
