@@ -75,15 +75,18 @@ blog and portfolio as post collections. Everything else in `jekyll/` is `media/`
 
 ### Where it runs
 
+The site is served from **Netlify on `https://boxysean.com`**, with DNS in Cloudflare and
+`www` 301-redirecting to the apex. `docs/deploy.md` has the DNS inventory, the click list
+that got it there, and the verification commands.
+
 | | before | after |
 |---|---|---|
 | Build | `docker run jekyll/jekyll jekyll build` (Makefile), or `jekyll build` (deploy.sh) | `bundle exec jekyll build` with the committed `Gemfile.lock` |
-| Host | AWS S3 bucket `s3://boxysean.com/`, synced with `aws s3 sync` | Netlify, configured by `netlify.toml` |
+| Host | AWS S3 bucket `s3://boxysean.com/`, synced with `aws s3 sync` | Netlify, configured by `netlify.toml`, served on the custom domain |
+| DNS | the registrar's own DNS | Cloudflare (`bonnie`/`troy.ns.cloudflare.com`), proxy off |
 | Default branch | `master` | `master` |
 
-`deploy.sh` and the old `make deploy` S3 sync are the legacy path; `make deploy` now
-deploys to Netlify. The S3 sync is retired once DNS points at Netlify (see the hosting
-issue).
+The S3 path is retired: `deploy.sh` is deleted and `make deploy` publishes to Netlify.
 
 ### Local development
 
@@ -109,10 +112,10 @@ cannot write there as a normal user. Install into the checkout instead — the
 
 ### Deploy
 
-Netlify is linked to this GitHub repo: pushes to `master` build production. Site:
-`boxysean-com` (`https://boxysean-com.netlify.app`, site id
-`94501faa-3611-49ea-b8ec-537ce1326bc1`). The custom domain is attached in phase 2 once
-DNS is re-pointed.
+Push to `master` and Netlify builds production from `netlify.toml` — that is the normal
+path, and it is what serves `https://boxysean.com`. Site: `boxysean-com`
+(`https://boxysean-com.netlify.app`, site id `94501faa-3611-49ea-b8ec-537ce1326bc1`); both
+the apex and `www` resolve to it, and `www` 301s to the apex at the edge.
 
 **Deploy previews do not build yet.** The site's setting is on (`build_settings.skip_prs`
 is `false`) and `netlify.toml` carries a `[context.deploy-preview]` command, but Netlify
