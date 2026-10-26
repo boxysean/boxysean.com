@@ -1,3 +1,5 @@
 jekyll/_site
 jekyll/.jekyll-cache
 .bundle
+vendor/
+

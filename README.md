@@ -66,3 +66,61 @@
     ###@@@@@@@@@####@@##''+@@@@.,.###+,:::;;';;+#############+++##+#@+#
     #@@@@@@@@@@@###+#@##:.+#@@@#'######,..;'':+++@########@#@#+++###@+#
     
+
+## boxysean.com
+
+The source of this site is in [jekyll/](jekyll/): Jekyll, `permalink: pretty`, with the
+blog and portfolio as post collections. Everything else in `jekyll/` is `media/`
+(stylesheets, JS, images) and the shared layouts in `_layouts` / `_includes`.
+
+### Where it runs
+
+| | before | after |
+|---|---|---|
+| Build | `docker run jekyll/jekyll jekyll build` (Makefile), or `jekyll build` (deploy.sh) | `bundle exec jekyll build` with the committed `Gemfile.lock` |
+| Host | AWS S3 bucket `s3://boxysean.com/`, synced with `aws s3 sync` | Netlify, configured by `netlify.toml` |
+| Default branch | `master` | `master` |
+
+`deploy.sh` and the old `make deploy` S3 sync are the legacy path; `make deploy` now
+deploys to Netlify. The S3 sync is retired once DNS points at Netlify (see the hosting
+issue).
+
+### Local development
+
+Ruby 3.2 and Bundler are the only requirements; the docker image is no longer needed.
+
+    bundle install          # or: make install
+    make serve              # http://localhost:4000, live reload
+
+### Build
+
+    make build              # -> jekyll/_site
+
+`make build` is exactly the command Netlify runs
+(`bundle exec jekyll build --source jekyll --destination jekyll/_site`), so a green
+`make build` from a clean checkout means the site will build on the host.
+
+### Deploy
+
+Production and previews both go through the Netlify CLI, authenticated with the token
+in 1Password ("Netlify API token"):
+
+    export NETLIFY_AUTH_TOKEN=$(op read "op://Shared with CoreyChimpBot/Netlify API token/password")
+    make deploy             # production deploy of jekyll/_site
+    make deploy-preview     # throwaway deploy URL, no production impact
+
+Pushes to `master` build production on Netlify; pull requests get deploy previews.
+Site: `boxysean-com` (`https://boxysean-com.netlify.app`). The custom domain is attached
+in phase 2 once DNS is re-pointed.
+
+### Rollback
+
+Netlify keeps every deploy. In the Netlify UI open the site, go to *Deploys*, pick the
+last known-good deploy and choose *Publish deploy*. That republishes those exact files
+without a rebuild, in seconds. For a code-level rollback, revert the commit and push to
+`master`.
+
+### Changing the gems
+
+`Gemfile.lock` is committed and pins the toolchain (Jekyll 4.4.1, Ruby 3.2). To
+upgrade, edit `Gemfile`, run `bundle update <gem>`, and commit both files.
