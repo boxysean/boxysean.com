@@ -124,3 +124,5 @@ without a rebuild, in seconds. For a code-level rollback, revert the commit and 
 
 `Gemfile.lock` is committed and pins the toolchain (Jekyll 4.4.1, Ruby 3.2). To
 upgrade, edit `Gemfile`, run `bundle update <gem>`, and commit both files.
+
+<!-- deploy preview probe 2026-10-26T09:04:04Z -->
