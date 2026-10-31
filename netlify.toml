@@ -19,12 +19,13 @@
 # ---------------------------------------------------------------------------
 # Redirects.
 #
-# URL inventory, taken from the built output: 37 pages — `/`, `/blog/`,
-# `/portfolio/`, 21 blog posts and 13 portfolio items. `permalink: pretty` has
+# URL inventory, taken from the built output: 50 pages — `/`, `/blog/`,
+# `/portfolio/`, `/talks/`, 32 blog posts and 14 portfolio items. `/talks/` is a
+# new page and needs no redirect; no published URL changed. `permalink: pretty` has
 # been in `_config.yml` since the first commit (06c0356, 2012), so blog posts
 # have never been published at `.html` URLs and nothing is needed to keep them
-# alive. The 13 portfolio permalinks lost their trailing slash in 319bf42
-# (2019); Netlify's pretty-URL normalisation 301s `/portfolio/<slug>` to
+# alive. The portfolio permalinks lost their trailing slash in 319bf42 (2019);
+# Netlify's pretty-URL normalisation 301s `/portfolio/<slug>` to
 # `/portfolio/<slug>/`, which is verified against the live site.
 #
 # That leaves exactly the two cases below.
